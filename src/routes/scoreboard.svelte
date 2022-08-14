@@ -1,9 +1,10 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  import { base } from "$app/paths";
   let csvData: string[][];
   let loading = true;
   onMount(async () => {
-    const dataFetch = await fetch("/scores.csv");
+    const dataFetch = await fetch(`${base}/scores.csv`);
     const res = await dataFetch.text();
     csvData = res
       .split("\n")
