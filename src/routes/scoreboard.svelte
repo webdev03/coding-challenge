@@ -34,7 +34,9 @@
           {#if i != 0}
             <tr class="pl-6">
               {#each row as cell}
-                <td>{cell}</td>
+                {#if cell.trim().length > 0}
+                  <td>{cell}</td>
+                {/if}
               {/each}
             </tr>
           {/if}
