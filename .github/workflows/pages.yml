@@ -36,6 +36,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Build with SvelteKit
+        env:
+          PAGES_BUILDING: enabled
         run: |
           pnpm run build
       - name: Upload artifact

@@ -12,7 +12,7 @@ const config = {
       default: true
     },
     paths: {
-      base: process.env.NODE_ENV === "production" ? "/coding-challenge" : ""
+      base: process.env.PAGES_BUILDING === "enabled" ? "/coding-challenge" : ""
     },
     adapter: adapter()
   }
