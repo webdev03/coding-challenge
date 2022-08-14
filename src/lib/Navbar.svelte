@@ -1,6 +1,7 @@
 <script>
   import { base } from "$app/paths";
 </script>
+
 <nav class="top-0 z-50">
   <div
     class="text-gray-900 mx-auto relative flex justify-between align-middle w-full bg-sky-500 min-h-50 px-4 py-2"
