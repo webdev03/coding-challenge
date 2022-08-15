@@ -14,6 +14,9 @@ const config = {
     paths: {
       base: process.env.PAGES_BUILDING === "enabled" ? "/coding-challenge" : ""
     },
+    browser: {
+      router: false
+    },
     adapter: adapter()
   }
 };

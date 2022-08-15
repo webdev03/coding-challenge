@@ -74,7 +74,7 @@
       if (CodeMirror) main();
     }, 100);
   });
-  onDestroy(() => {
+  /* onDestroy(() => {
     try {
       // @ts-ignore
       document.querySelectorAll(".CodeMirror").forEach((i) => {
@@ -86,7 +86,7 @@
         });
       
     } catch(e){console.error(e)}
-      })
+      }) */
 </script>
 
 <svelte:head>

@@ -16,7 +16,12 @@ export const bakeToast = (options: {
   body: string;
 }) => {
   let ot = get(toastStore);
-  ot.push({ id: String(get(finished)), type: options.type, title: options.title, body: options.body });
+  ot.push({
+    id: String(get(finished)),
+    type: options.type,
+    title: options.title,
+    body: options.body
+  });
   toasts.set(ot);
   finished.set(get(finished) + 1);
 };
