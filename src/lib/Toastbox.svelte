@@ -28,7 +28,7 @@
         ? 'bg-sky-500'
         : toast.type == 'warning'
         ? 'bg-yellow-500'
-        : 'bg-red-400'} p-3 rounded w-52 h-fit"
+        : 'bg-red-400'} p-3 rounded w-52 h-fit border border-gray-800 border-solid"
     >
       <p class="font-bold">{toast.title}</p>
       <p>{toast.body}</p>
