@@ -111,7 +111,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"></script>
 </svelte:head>
-<h2 class="font-bold text-xl">IMPORTANT NOTE: Your SHA1 hashed IP is stored on the server in memory temporarily for up to 2 hours if you run code here. If you flood more than 9 requests per minute continuously, your SHA1 hashed IP address may be added to a configuration file permanently. If you have any enquiries, please contact either @god286 on Scratch or @webdev03 on GitHub. By running code using the code running tool on this page, you agree that your SHA1 hashed IP may be stored temporarily.</h2>
+<h2 class="font-bold text-xl">IMPORTANT NOTE: Your SHA1 hashed IP is stored on the server in memory temporarily if you run code here. If you flood more than 9 requests per minute continuously, your SHA1 hashed IP address may be added to a configuration file permanently. If you have any enquiries, please contact either @god286 on Scratch or @webdev03 on GitHub. By running code using the code running tool on this page, you agree that your SHA1 hashed IP may be stored temporarily.</h2>
 {#if loading}
   <Loading />
 {:else}
