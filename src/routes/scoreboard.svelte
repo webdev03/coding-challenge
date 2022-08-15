@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { base } from "$app/paths";
+  import Loading from "$lib/Loading.svelte";
   let csvData: string[][];
   let loading = true;
   onMount(async () => {
@@ -16,7 +17,7 @@
 </script>
 
 {#if loading}
-  <h3 class="animate-pulse font-bold text-3xl text-center">Loading...</h3>
+  <Loading />
 {:else}
   <div class="rounded bg-slate-400 p-2">
     <table class="w-full table-fixed border-spacing-20">
