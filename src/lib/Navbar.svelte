@@ -16,6 +16,9 @@
       <a href="{base}/run"
         ><li class="ml-2 text-base hover:font-semibold transition-all">Run JavaScript D8</li></a
       >
+      <a href="{base}/hash"
+        ><li class="ml-2 text-base hover:font-semibold transition-all">SHA256 Hash</li></a
+      >
     </ul>
   </div>
 </nav>
